@@ -1,3 +1,6 @@
+/*
+ * POJO for the post response when a valid receipt is sent.
+*/
 package com.receiptprocessorchallenge.fetchrewards;
 
 public class PostResponse {

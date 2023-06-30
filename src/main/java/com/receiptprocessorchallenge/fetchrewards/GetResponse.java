@@ -1,3 +1,7 @@
+/*
+ * POJO for the get response when a receipt id that exists is sent.
+*/
+
 package com.receiptprocessorchallenge.fetchrewards;
 
 public class GetResponse {

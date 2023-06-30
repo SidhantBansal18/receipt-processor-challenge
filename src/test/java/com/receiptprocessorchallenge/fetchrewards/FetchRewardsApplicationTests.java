@@ -1,3 +1,7 @@
+/*
+* Unit test class to test the controllers
+* */
+
 package com.receiptprocessorchallenge.fetchrewards;
 
 import com.jayway.jsonpath.JsonPath;
@@ -9,9 +13,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.net.http.HttpClient;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -21,8 +22,7 @@ class FetchRewardsApplicationTests {
 
     @Autowired
     private MockMvc mockMvc; //To call the rest API provided by Spring framework
-
-
+    
     @Test
     public void givenAValidReceipt_whenPostRequestToAdd_thenStatusIsOk() throws Exception{
 

@@ -1,3 +1,7 @@
+/*
+ * POJO for the sub items of receipt
+*/
+
 package com.receiptprocessorchallenge.fetchrewards;
 
 import jakarta.validation.constraints.NotBlank;

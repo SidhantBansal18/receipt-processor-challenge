@@ -1,3 +1,7 @@
+/*
+ * POJO for the receipt that will be received by the user.
+*/
+
 package com.receiptprocessorchallenge.fetchrewards;
 
 import jakarta.validation.constraints.NotBlank;
