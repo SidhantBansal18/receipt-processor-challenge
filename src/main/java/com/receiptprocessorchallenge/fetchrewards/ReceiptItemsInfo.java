@@ -1,8 +1,15 @@
 package com.receiptprocessorchallenge.fetchrewards;
 
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+
 public class ReceiptItemsInfo {
 
+    @NotBlank
+    @NotNull
     private String shortDescription;
+    @NotBlank
+    @NotNull
     private Double price;
 
     public ReceiptItemsInfo(String shortDescription, Double price) {

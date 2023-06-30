@@ -25,9 +25,6 @@ public class ReceiptsService {
     }
 
     public GetResponse getScore(String id){
-        if(!receiptsScore.containsKey(id)){
-            throw new NullPointerException("The receipt for the id " + id + " does not exist");
-        }
         GetResponse getResponse = new GetResponse(receiptsScore.get(id));
         return getResponse;
     }
