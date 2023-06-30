@@ -3,6 +3,8 @@ package com.receiptprocessorchallenge.fetchrewards;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -18,13 +20,8 @@ public class ReceiptsController {
 
     @PostMapping("/process")
     @ResponseBody
-    public ResponseEntity<PostResponse> addReceipt(@RequestBody ReceiptInfo receipt){
-        try {
+    public ResponseEntity<PostResponse> addReceipt(@RequestBody @Valid ReceiptInfo receipt){
             return ResponseEntity.ok(receiptsService.processReceipts(receipt));
-        }
-        catch (RuntimeException e){
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "The receipt is invalid");
-        }
     }
 
     @GetMapping("/{id}/points")
