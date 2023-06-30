@@ -2,7 +2,7 @@
 
 ## Requirements
 - Docker
-- Clone repo on local:
+- Unzip the file OR Clone the repo on your local machine from GitHub:
 
         git clone https://github.com/SidhantBansal18/receipt-processor-challenge.git
 
