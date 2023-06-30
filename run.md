@@ -48,6 +48,8 @@
           {
           "id": "926314cb-e6e2-442e-954c-eb461907210b"
           }
+   
+   ![postman_post_request](postman_post_request.png)
        
     2. Get receipt points
        1. Add a tab for another request in the postman workspace
@@ -58,3 +60,5 @@
           {
           "points": 31
           }
+          
+![postman_get_request](postman_get_request.png)
