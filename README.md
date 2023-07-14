@@ -1,6 +1,6 @@
 # Receipt Processor
 
-Build a web service that fulfils the documented API. The API is described below after the instructions to run the application. A formal definition is also provided in the [api.yml](./api.yml) file
+Build a web service that fulfils the documented API. A formal definition of the APIs is provided in the [api.yml](./api.yml) file. The API is also described [below](#summary-of-api-specification) after the instructions to run the application
 
 ## Instructions to run the application
 
